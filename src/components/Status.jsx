@@ -18,7 +18,7 @@ function Status(board) {
 
         ((board[0][0] === "O") && (board[1][0] === "O") && (board[2][0] === "O")) ||
         ((board[0][1] === "O") && (board[1][1] === "O") && (board[2][1] === "O")) || // columns matching
-        ((board[0][2] === "O") && (board[1][2] === "O") && (board[2][3] === "O")) ||
+        ((board[0][2] === "O") && (board[1][2] === "O") && (board[2][2] === "O")) ||
 
         ((board[0][0] === "O") && (board[1][1] === "O") && (board[2][2] === "O")) || // diagonals
         ((board[0][2] === "O") && (board[1][1] === "O") && (board[2][0] === "O"))) {
