@@ -25,7 +25,10 @@ function Status(board) {
         ((board[0][0] === "O") && (board[1][1] === "O") && (board[2][2] === "O")) || // diagonals
         ((board[0][2] === "O") && (board[1][1] === "O") && (board[2][0] === "O"))) {
         result = "O wins";
-    } else { result = "Draw!" }
+    } else if (
+        board.some((row) => row.includes(' '))
+    ) { result = 'Game in Progress...'; }
+    else { result = "Draw!" }
 
     return result;
 }
